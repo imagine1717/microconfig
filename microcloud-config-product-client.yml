@@ -14,12 +14,10 @@ spring:
    driver-class-name: com.mysql.jdbc.Driver # 配置MySQL的驱动程序类
    url: jdbc:mysql://localhost:3306/springcloud?serverTimezone=GMT%2B8 # 数据库连接地址
    username: root # 数据库用户名
-   password: root # 数据库连接密码
+   password: root1234% # 数据库连接密码
  application:
    name: microcloud-config-product-client
- profiles: 
-   active:
-      - dev
+ profiles: dev
 
 logging:
   level:
@@ -28,7 +26,7 @@ logging:
 eureka:
   client: # 客户端进行Eureka注册的配置
     service-url:
-      defaultZone: http://admin:123@localhost:7001/eureka
+      defaultZone: http://admin:enjoy@localhost:7001/eureka
   instance:
     instance-id: microcloud-config-product-client
     prefer-ip-address: true
@@ -60,12 +58,10 @@ spring:
    driver-class-name: com.mysql.jdbc.Driver # 配置MySQL的驱动程序类
    url: jdbc:mysql://localhost:3306/springcloud?serverTimezone=GMT%2B8 # 数据库连接地址
    username: root # 数据库用户名
-   password: root # 数据库连接密码
+   password: root1234% # 数据库连接密码
  application:
    name: microcloud-config-product-client
- profiles:
-   active:
-     - beta
+ profiles: beta
 
 logging:
   level:
@@ -74,8 +70,8 @@ logging:
 eureka:
   client: # 客户端进行Eureka注册的配置
     service-url:
-      defaultZone: http://admin:123@localhost:7002/eureka 
-  instance: 
+      defaultZone: http://admin:enjoy@localhost:7002/eureka
+  instance:
     instance-id: microcloud-config-product-client
     prefer-ip-address: true
     lease-renewal-interval-in-seconds: 2 # 设置心跳的时间间隔（默认是30秒）
@@ -92,4 +88,3 @@ management:
     web:
       exposure:
         include: '*'
-
