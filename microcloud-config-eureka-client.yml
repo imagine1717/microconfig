@@ -35,7 +35,7 @@ eureka:
     fetch-registry: false
     register-with-eureka: false
     service-url:
-      defaultZone: http://admin:123@eureka1:7002/eureka
+      defaultZone: http://admin:123@eureka2:7002/eureka
   instance: # 实例定义
     hostname: eureka2 # 定义 eureka 实例所在的主机
 spring:
