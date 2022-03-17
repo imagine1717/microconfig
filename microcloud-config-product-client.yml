@@ -17,7 +17,9 @@ spring:
    password: root # 数据库连接密码
  application:
    name: microcloud-config-product-client
- profiles: dev
+ profiles: 
+   active:
+      - dev
 
 logging:
   level:
@@ -61,7 +63,9 @@ spring:
    password: root # 数据库连接密码
  application:
    name: microcloud-config-product-client
- profiles: beta
+ profiles:
+   active:
+     - beta
 
 logging:
   level:
