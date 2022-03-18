@@ -15,6 +15,11 @@ eureka:
  client:
   service-url:
     defaultZone: http://admin:123@localhost:7001/eureka
+
+info:
+  app.name: microcloud-config-client-dev
+  company.name: enjoy
+
 ---
 server:
   port: 8102
