@@ -9,7 +9,7 @@ server:
 spring:
   profiles: dev
   application:
-      name: microconfig-test-client33
+      name: microconfig-test-client55
 
 eureka:
  client:
@@ -17,8 +17,8 @@ eureka:
     defaultZone: http://admin:123@localhost:7004/eureka
 
 info:
-  app.name: microcloud-config-client-dev22
-  company.name: enjoy2222
+  app.name: microcloud-config-client-dev333
+  company.name: enjoy333
 
 ---
 server:
